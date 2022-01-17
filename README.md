@@ -27,7 +27,7 @@ $ npx hardhat run scripts/test-uniswap-script.js
 $ cd ../uni-contract-deploy
 $ npm install
 ```
-modify network node address setting in the config.yml as following configuration image shown.
+modify deployed network node address setting in the config.yml as following  image shown.
 
 ![1642397938(1)](https://user-images.githubusercontent.com/18735238/149713785-7f2c2898-74d6-4334-a599-27afda81637f.jpg)
 
