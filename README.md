@@ -1,5 +1,5 @@
 # use hardhat tool  to test and compile solitity constract
-#### axon uniswap constract case:
+#### axon uniswap constract case: suggest vscode open this project.
 ```shell
 $ cd ~
 $ git clone https://github.com/nervosnetwork/axon-devops.git
@@ -27,7 +27,10 @@ $ npx hardhat run scripts/test-uniswap-script.js
 $ cd ../uni-contract-deploy
 $ npm install
 ```
-modify network setting in the config.yml as following configuration code is shown
+modify network node address setting in the config.yml as following configuration image shown.
+
+![1642397938(1)](https://user-images.githubusercontent.com/18735238/149713785-7f2c2898-74d6-4334-a599-27afda81637f.jpg)
+
 ```shell
 $ node templates/deploy.js
 ```
