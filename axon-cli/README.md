@@ -121,3 +121,13 @@ If you just run the benchmark, you can have a look at the `axon-benchmark` Dashb
 ## 2. transfer token from CKB to AXON
 `cs --sender-key=dd50cac37ec6dd12539a968c1a2cbedda75bd8724f7bcad486548eaabb87fc8b --capacity=1000 --tx-type=1`
 
+# 8. Hardhat
+After configuration of Hardhat and creation of Hardhat project by following https://hardhat.org/tutorial, you can use axon-cli to execute hardhat commands.
+## 1. compile
+`hardhat compile` is equal to native `npx hardhat compile`.
+## 2. test
+`hardhat test` is equal to native `npx hardhat test`.
+## 3. run
+`hardhat run scripts/deploy.js` is equal to native `npx hardhat run scripts/deploy.js`.
+## 4. clean
+`hardhat clean` is equal to native `npx hardhat clean`.

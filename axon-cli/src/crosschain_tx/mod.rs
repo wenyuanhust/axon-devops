@@ -1,4 +1,3 @@
-extern crate derive_more;
 use derive_more::Display;
 
 mod constants;

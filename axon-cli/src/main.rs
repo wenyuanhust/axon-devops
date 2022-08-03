@@ -1,6 +1,7 @@
 mod cli;
 mod crosschain_tx;
 mod docker;
+mod hardhat;
 mod interactive;
 
 use cli::Cli;

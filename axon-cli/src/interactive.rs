@@ -3,7 +3,7 @@ use std::process;
 use clap::{crate_version, Arg, Command};
 use rustyline::{error::ReadlineError, Editor};
 
-use crate::{crosschain_tx::CrossChain, docker::DockerApi};
+use crate::{crosschain_tx::CrossChain, docker::DockerApi, hardhat::HardHat};
 
 const HISTORY_FILE: &str = "history.txt";
 
@@ -44,6 +44,7 @@ impl Interactive {
             .subcommand(Command::new("del").about("Delete chain data"))
             .subcommand(Command::new("bm").about("Start benchmark"))
             .subcommand(CrossChain::get_cs_command())
+            .subcommand(HardHat::get_hardhat_command())
             .subcommand(
                 Command::new("apm")
                     .about("Application Performance Management")
@@ -164,6 +165,9 @@ impl Interactive {
                                 Some(("cs", cs_matches)) => {
                                     let result = CrossChain::exec_cs_tx(cs_matches);
                                     println!("{:?}", result);
+                                }
+                                Some(("hardhat", hardhat_matches)) => {
+                                    let _result = HardHat::exec_hardhat(hardhat_matches);
                                 }
                                 // Some(("list", _)) => {
                                 // }
